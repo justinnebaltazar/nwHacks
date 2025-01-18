@@ -1,6 +1,7 @@
 import styles from "./App.module.css"
 import LoginPage from "./components/LoginPage/LoginPage"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./components/Navbar/Navbar"
 
 function App() {
 
@@ -8,7 +9,11 @@ function App() {
 
    <Router>
     <Routes>
-      <Route path="/" element={<LoginPage/>}></Route>
+      <Route path="/" element={
+            <>
+              <NavBar/>
+            </>
+          } />
     </Routes>
    </Router>
 
