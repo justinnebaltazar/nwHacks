@@ -1,12 +1,11 @@
-import { useState } from 'react'
 import styles from "./App.module.css"
+import LoginPage from "./components/LoginPage/LoginPage"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className={styles.App}>
-      <h1>Welcome to our website</h1>
+      <LoginPage></LoginPage>
     </div>
   )
 }
