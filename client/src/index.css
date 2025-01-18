@@ -28,6 +28,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url(california.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  
 }
 
 h1 {
