@@ -1,22 +1,36 @@
-import styles from "./App.module.css"
-import LoginPage from "./components/LoginPage/LoginPage"
+import styles from "./App.module.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from './components/Navbar/Navbar'; // Assuming Navbar is properly imported
-import Donate from './components/Donate/Donate'; // Import the Donate page
-
+import Navbar from "./components/Navbar/Navbar";
+import Donate from "./components/Donate/Donate";
+import LoginPage from "./components/LoginPage/LoginPage";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={
+        {/* About page route with Navbar */}
+        <Route
+          path="/"
+          element={
             <>
-                <Navbar />
-                <Donate />
-                </>
-        } />
-  
-        <Route path="/donate" element={<Donate />} /> {/* Add Donate route */}
+              <Navbar />
+            </>
+          }
+        />
+
+        {/* Donate route with Navbar */}
+        <Route
+          path="/donate"
+          element={
+            <>
+              <Navbar />
+              <Donate />
+            </>
+          }
+        />
+
+        {/* Login route without Navbar */}
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   );
