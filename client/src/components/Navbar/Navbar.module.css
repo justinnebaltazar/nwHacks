@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
 
 
 .navbar {
@@ -15,11 +9,31 @@
     box-shadow:3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-links {
+.navbar ul {
+    width: 100%;
+    list-style-type: none;
     display: flex;
-    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
 }
 
-.nav-item {
-    margin-left: 5px;
+.navbar li {
+    height: 50px;
+    display: inline;
+}
+
+.navbar a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:darkslategrey;
+}
+
+.navbar a:hover {
+    color:azure;
 }
