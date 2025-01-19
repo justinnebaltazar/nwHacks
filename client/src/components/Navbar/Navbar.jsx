@@ -18,6 +18,12 @@ const Navbar = () => {
             <li>
                 <a href="#">Contact Us</a>
             </li>
+            <li>
+                <Link to="/login">Login</Link>
+            </li>
+            <li>
+                <Link to="/register">Register</Link>
+            </li>
         </ul>
     </nav>
   )
