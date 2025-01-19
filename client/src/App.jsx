@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Donate from "./components/Donate/Donate";
 import LoginPage from "./components/LoginPage/LoginPage";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -10,10 +11,11 @@ function App() {
       <Routes>
         {/* About page route with Navbar */}
         <Route
-          path="/"
+          path="/about"
           element={
             <>
               <Navbar />
+              <About />
             </>
           }
         />
