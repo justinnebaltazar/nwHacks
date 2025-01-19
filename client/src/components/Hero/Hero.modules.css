@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.hero {
+    background-color:gainsboro;
+    font-weight: bold;
+    font-size: 35px;
+    border-radius: 15px;
+}
+
+.hero title {
+    font-weight:bold
+
+}
+
+.hero subtitle {
+    font-weight:lighter
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+    padding: 20px;
+    text-align: left;
+  }
+
+  .overlay p {
+    font-weight:lighter
+  }
+
+.registerButton {
+    background-color:darkturquoise;
+    color: white;
+    font-size: 16px;
+    font-weight:bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.registerButton:hover {
+    background-color:darkslategrey;
+}

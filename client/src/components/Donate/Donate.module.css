@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.donate {
+    padding: 40px;
+    background-color:gainsboro;
+}
+
+.donate title {
+    font-weight:bold
+
+}
+
+.donate subtitle {
+    font-weight:lighter
+
+}
