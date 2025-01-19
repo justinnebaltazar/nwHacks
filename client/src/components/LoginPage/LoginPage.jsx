@@ -7,9 +7,17 @@ export default function LoginPage() {
     const [username, setUserName] = useState(''); 
     const [password, setPassword] = useState('');
 
+    function login(ev) {
+        ev.preventDefault();
+        fetch('http://localhost:4000/login', {
+            method: 'POST',
+            body: JSON.stringify({username, password}),
+            headers: {'Content-Type' : 'application/json'}
+        })
+    }
+
     return (
-        // onSubmit = {login}
-        <div className={styles.container}> 
+        <div className={styles.container} onSubmit={login}> 
             <form className={styles.login}>
             <h1>Login</h1>
             <input type="text" 
