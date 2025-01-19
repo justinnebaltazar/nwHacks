@@ -5,9 +5,18 @@ export default function RegisterPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
+    async function register(ev) {
+        ev.preventDefault();
+        await fetch('http://localhost:4000/register', {
+            method: 'POST', 
+            body: JSON.stringify({username, password}), 
+            headers: {'Content Type': 'application/json'},
+        })
+    }
+
     return (
         <div className={styles.container}>
-            <form className={styles.register}>
+            <form className={styles.register} onSubmit={register}>
 
                 <h1>Register</h1>
                 <input type="text" 
